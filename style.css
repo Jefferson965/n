@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estiliza o fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #DBCEC6; /* Cor de fundo da barra de rolagem */
+}
+
+/* Estiliza o "polegar" (a parte que se move) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #ffffff; /* Cor do polegar */
+  border-radius: 10px; /* Deixa o polegar com cantos arredondados */
+}
+
+/* Estiliza o "polegar" quando está em hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7e1616; /* Cor do polegar quando está em hover */
+}
+
+.pt-1 {
+  background-color: #DBCEC6;
+  position: relative;
+  max-height: 1780px;
+}
+
+.img-capa {
+  width: 100%; /* Modificado para responsividade */
+  max-width: 1245px;
+}
+
+.img-2 {
+  position: relative;
+  left: 10%; /* Modificado para usar percentual */
+  bottom: 100px;
+  max-width: 80%; /* Limite de largura para responsividade */
+}
+
+.img-3 {
+  position: relative;
+  bottom: 750px;
+  left: 50%; /* Modificado para centralizar mais */
+  width: 380px;
+  max-width: 80%; /* Limite de largura para responsividade */
+}
+
+.img-4 {
+  position: relative;
+  bottom: 700px;
+  width: 100%; /* Modificado para responsividade */
+  max-width: 900px;
+}
+
+.pt-2 {
+  width: 100%;
+  background-color: #6a2f27;
+  border: black;
+}
+
+.img-5 {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.img-6 {
+  width: 100%; /* Modificado para responsividade */
+  max-width: 1245px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .img-capa,
+  .img-4,
+  .img-6 {
+    width: 100%; /* Certifique-se de que as imagens sejam responsivas */
+  }
+
+  .img-2, .img-3 {
+    position: static; /* Remove posições relativas em telas menores */
+    margin: 0 auto; /* Centraliza as imagens */
+    width: 90%; /* Ajusta a largura para dispositivos móveis */
+  }
+
+  .pt-1, .pt-2 {
+    padding: 20px; /* Adiciona padding para espaçamento */
+  }
+}
+
+@media (max-width: 480px) {
+  .img-capa,
+  .img-4,
+  .img-6 {
+    width: 100%; /* Imagens em 100% de largura para telas muito pequenas */
+  }
+
+  .img-2, .img-3 {
+    width: 100%; /* Largura completa para melhor visualização */
+  }
+
+  .pt-1, .pt-2 {
+    padding: 10px; /* Menos padding em telas muito pequenas */
+  }
+}
